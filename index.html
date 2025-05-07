@@ -7,26 +7,40 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   
-  <title>Frontend Mentor | Social links profile</title>
+  <title>Social links profile</title>
 
 </head>
 <body>
+	<div id="header">
+		<img id="title" src="./title.png"></img>
+	</div>
 
 	<div id="card">
-		<h1>Jessica Randall</h1>
-		<h3>London, United Kingdom</h3>
-		<h2>"Front-end developer and avid reader."</h2>
+		<div class="tooltip">
+			<img id="avatar" src="https://media.licdn.com/dms/image/v2/D4D03AQGWN6q3DqF58w/profile-displayphoto-shrink_200_200/B4DZPjonWZGoAY-/0/1734690899745?e=1752105600&v=beta&t=Kj4jP4Sp-alXuzI-4nHTWkX6m_tTBPRrx47xq8Am_z8">
+			<span class="tooltiptext">Click to expand</span>
+		</div>
+		
+		<div id="myModal" class="modal">
+			<span class="close">
+			X
+			<p style="font-size: 14px;">Close</p>
+			</span>
+			<img class="modal-content" id="img01" src="https://media.licdn.com/dms/image/v2/D4D03AQGWN6q3DqF58w/profile-displayphoto-shrink_200_200/B4DZPjonWZGoAY-/0/1734690899745?e=1752105600&v=beta&t=Kj4jP4Sp-alXuzI-4nHTWkX6m_tTBPRrx47xq8Am_z8">
+		</div>
+		
+		<h1>Ace Cochez</h1>
+		<h3><em>"Full-stack software developer"</em></h3>
 
-		<p><a class="link" id="github">GitHub</a></p>
-		<p><a class="link" id="frontend-mentor">Frontend Mentor</a></p>
-		<p><a class="link" id="linkedin">LinkedIn</a></p>
-		<p><a class="link" id="x">Twitter</a></p>
-		<p><a class="link" id="instagram">Instagram</a></p>
+		<p class="link"><a id="github" href="https://github.com/acecochez" target="_blank">GitHub</a></p>
+		<p class="link"><a id="linkedin" href="https://www.linkedin.com/in/acochez/" target="_blank">LinkedIn</a></p>
+		<p class="link"><a id="youtube" href="https://www.youtube.com/@AceCochez" target="_blank">YouTube</a></p>
 	</div>
   
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by Ace Cochez.
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by Ace Cochez.</p>
   </div>
 </body>
+<script src="script.js"></script>
 </html>
